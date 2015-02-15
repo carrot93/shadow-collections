@@ -1,2 +1,2 @@
 # shadow-describer
-Meteor collections should describe themselves
+Meteor collections instances should describe themselves

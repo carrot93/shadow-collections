@@ -1,11 +1,12 @@
 Package.describe({
-  name: 'kestanous:shadow-collection',
+  name: 'shadow:collections',
   summary: '',
   version: "0.1.0",
   git: "https://github.com/Meteor-Reaction/shadow-collection.git"
 });
 
 Package.on_use(function (api) {
+  api.use('matb33:collection-hooks@0.7.9');
    api.use([
     'underscore@1.0.0', 
     'mongo@1.0.0'
@@ -16,22 +17,3 @@ Package.on_use(function (api) {
   ]);
    api.export('addShadow')
 });
-
-// Package.on_test(function (api) {
-//   api.use('kestanous:candid');
-//   api.use([
-//     'accounts-base',
-//     'tinytest',
-//     'tracker',
-//     'mongo',
-//     'underscore',
-//     'tinytest',
-//     'iron:router'
-//     ]);
-  
-//   api.add_files([
-//     'tests/database.js',
-//     'tests/router.js',
-//     'tests/methods.js'
-//     ]);
-// });

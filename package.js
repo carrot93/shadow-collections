@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'shadow:collections',
-  summary: '',
+  name: 'mreaction:collections',
+  summary: 'Create Mongo.Collections shadow objects and helpers',
   version: "0.1.0",
   git: "https://github.com/Meteor-Reaction/shadow-collection.git"
 });

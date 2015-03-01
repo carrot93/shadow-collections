@@ -1,7 +1,7 @@
 # shadow-collection
 Meteor collections shadow objects and helpers
 
-This package is a utility package for other packages. It provides a reusable non-conflict way to extend Meteor JS Mongo.Collections via transform.
+This package is a utility package for other packages. It provides a reusable non-conflict way to extend Meteor JS Mongo.Collections and instance transforms.
 
 ## usage
 ```js
@@ -40,4 +40,9 @@ addShadow({
     return doc; //always!
   }
 });
+
+Example = new Mongo.Collection('example');
+var id = Example.insert({});
+var obj = Example.findOne(id);
+obj.instantiationTime() //returns date object
 ```

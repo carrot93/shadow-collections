@@ -8,8 +8,8 @@ Package.describe({
 Package.on_use(function (api) {
 
   api.use([ //load order control
-    'accounts-base', 
-    'matb33:collection-hooks'
+    'accounts-base@0.0.0 || 1.0.0', 
+    'matb33:collection-hooks@0.7.0'
   ], ['server', 'client'], {weak: true})
 
   api.use([

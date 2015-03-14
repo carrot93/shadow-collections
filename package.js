@@ -7,7 +7,10 @@ Package.describe({
 
 Package.on_use(function (api) {
 
-  api.use(['accounts-base', 'matb33:collection-hooks'], ['server', 'client'], {weak: true})
+  api.use([ //load order control
+    'accounts-base', 
+    'matb33:collection-hooks'
+  ], ['server', 'client'], {weak: true})
 
   api.use([
     'underscore@1.0.0', 
